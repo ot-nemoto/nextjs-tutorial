@@ -4,6 +4,18 @@
 
 -   [my-app](./my-app)
 
+## デプロイ
+
+```sh
+bun install
+
+bun run build
+
+bun run start
+```
+
+## 開発環境
+
 ```sh
 bun dev
 # or
@@ -13,6 +25,19 @@ bun debug
 -   http://localhost:3000/
 
 ### Configuration
+
+_clerk_
+
+-   API Keys > Publishable key
+-   API Keys > Secret keys
+
+_cloudflare_
+
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Access Key ID
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Secret Access Key
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use jurisdiction-specific endpoints for S3 clients: > Default
+
+-   R2 > Overview > Buckets > <YOUR-BUCKET> > Public R2.dev Bucket URL
 
 _.env.local_
 
