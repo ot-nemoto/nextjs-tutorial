@@ -20,22 +20,22 @@ bun dev
 bun debug
 ```
 
--   http://localhost:3000/
+- http://localhost:3000/
 
 ### Configuration
 
 _clerk_
 
--   API Keys > Publishable key
--   API Keys > Secret keys
+- API Keys > Publishable key
+- API Keys > Secret keys
 
 _cloudflare_
 
--   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Access Key ID
--   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Secret Access Key
--   R2 > Overview > Manage R2 API Tokens > Create API Token > Use jurisdiction-specific endpoints for S3 clients: > Default
+- R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Access Key ID
+- R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Secret Access Key
+- R2 > Overview > Manage R2 API Tokens > Create API Token > Use jurisdiction-specific endpoints for S3 clients: > Default
 
--   R2 > Overview > Buckets > <YOUR-BUCKET> > Public R2.dev Bucket URL
+- R2 > Overview > Buckets > <YOUR-BUCKET> > Public R2.dev Bucket URL
 
 _.env.local_
 
@@ -64,6 +64,6 @@ POSTGRES_USER=
 
 ### 関連サービス
 
--   [Clerk](https://clerk.com/)
--   [Cloudflare](https://www.cloudflare.com/)
--   [Vercel](https://vercel.com/)
+- [Clerk](https://clerk.com/)
+- [Cloudflare](https://www.cloudflare.com/)
+- [Vercel](https://vercel.com/)
