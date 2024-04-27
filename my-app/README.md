@@ -67,3 +67,16 @@ POSTGRES_USER=
 - [Clerk](https://clerk.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [Vercel](https://vercel.com/)
+
+### その他
+
+現在設定されているすべての環境変数を出力
+
+```sh
+bun --print process.env
+```
+
+```sh
+./node_modules/.bin/dotenv -e .env.local -- bun prisma migrate dev --name init
+./node_modules/.bin/dotenv -e .env.local -- bun prisma validate
+```
