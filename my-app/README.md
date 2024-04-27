@@ -1,36 +1,69 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# my-app
 
-First, run the development server:
+## デプロイ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```sh
+bun install
+
+bun run build
+
+bun run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 開発環境
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+bun dev
+# or
+bun debug
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-   http://localhost:3000/
 
-## Learn More
+### Configuration
 
-To learn more about Next.js, take a look at the following resources:
+_clerk_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   API Keys > Publishable key
+-   API Keys > Secret keys
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+_cloudflare_
 
-## Deploy on Vercel
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Access Key ID
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use the following credentials for S3 clients: > Secret Access Key
+-   R2 > Overview > Manage R2 API Tokens > Create API Token > Use jurisdiction-specific endpoints for S3 clients: > Default
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   R2 > Overview > Buckets > <YOUR-BUCKET> > Public R2.dev Bucket URL
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_.env.local_
+
+```sh
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# Cloudflare
+CLOUDFLARE_ACCESS_KEY_ID=
+CLOUDFLARE_ACCESS_KEY=
+CLOUDFLARE_ENDPOINT=
+
+IMAGE_HOST_URL=
+
+# Vercel Postgres
+POSTGRES_DATABASE=
+POSTGRES_HOST=
+POSTGRES_PASSWORD=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL=
+POSTGRES_URL_NON_POOLING=
+POSTGRES_URL_NO_SSL=
+POSTGRES_USER=
+```
+
+### 関連サービス
+
+-   [Clerk](https://clerk.com/)
+-   [Cloudflare](https://www.cloudflare.com/)
+-   [Vercel](https://vercel.com/)
