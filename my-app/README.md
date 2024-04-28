@@ -76,7 +76,16 @@ POSTGRES_USER=
 bun --print process.env
 ```
 
+### prisma
+
+マイグレーション
+
 ```sh
 ./node_modules/.bin/dotenv -e .env.local -- bun prisma migrate dev --name init
+```
+
+バリデーション
+
+```
 ./node_modules/.bin/dotenv -e .env.local -- bun prisma validate
 ```
