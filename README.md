@@ -1,26 +1,9 @@
 # nextjs-workshop
 
 - 以下のワークショップを参考に環境構築
+
   - [Next.js 14 アプリ開発のあらすじ](https://zenn.dev/nino/books/30e21d37af73b5)
   - [next-demo-app](https://github.com/dninomiya/next-demo-app)
-
-## デプロイ
-
-```sh
-bun install
-
-bun run build
-
-bun run start
-```
-
-## 開発環境
-
-```sh
-bun dev
-# or
-bun debug
-```
 
 - http://localhost:3000/
 
@@ -90,4 +73,11 @@ bun --print process.env
 
 ```
 ./node_modules/.bin/dotenv -e .env.local -- bun prisma validate
+```
+
+## Startup
+
+```sh
+bun install
+bun debug
 ```
