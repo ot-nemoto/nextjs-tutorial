@@ -5,9 +5,27 @@
   - [Next.js 14 アプリ開発のあらすじ](https://zenn.dev/nino/books/30e21d37af73b5)
   - [next-demo-app](https://github.com/dninomiya/next-demo-app)
 
-- http://localhost:3000/
+## Packages
 
-### Configuration
+準備のために実行したコマンド（実行済み）
+
+_prisma_
+
+```sh
+# dependencies
+bun add @prisma/client
+
+# devDependencies
+bun add --dev prisma
+```
+
+_shadcn-ui_
+
+```sh
+bunx shadcn-ui@latest add button
+```
+
+## 外部サービスの登録と設定
 
 _clerk_
 
@@ -81,3 +99,5 @@ bun --print process.env
 bun install
 bun debug
 ```
+
+_Open your Web browser http://localhost:3000/_
