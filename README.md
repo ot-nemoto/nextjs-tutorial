@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # my-app
+
+- 以下のワークショップを参考に環境構築
+  - [Next.js 14 アプリ開発のあらすじ](https://zenn.dev/nino/books/30e21d37af73b5)
+  - [next-demo-app](https://github.com/dninomiya/next-demo-app)
 
 ## デプロイ
 
