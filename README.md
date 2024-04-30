@@ -57,7 +57,7 @@ _shadcn-ui_
 bunx shadcn-ui@latest add button
 ```
 
-## Configuration
+## Environments
 
 _.env.local_
 
@@ -81,6 +81,12 @@ POSTGRES_URL=
 POSTGRES_URL_NON_POOLING=
 POSTGRES_URL_NO_SSL=
 POSTGRES_USER=
+```
+
+## Migrate with prisma
+
+```sh
+bun prisma migrate dev --name init
 ```
 
 ### その他
