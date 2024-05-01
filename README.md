@@ -86,29 +86,7 @@ POSTGRES_USER=
 ## Migrate with prisma
 
 ```sh
-bun prisma migrate dev --name init
-```
-
-### その他
-
-現在設定されているすべての環境変数を出力
-
-```sh
-bun --print process.env
-```
-
-### prisma
-
-マイグレーション
-
-```sh
-./node_modules/.bin/dotenv -e .env.local -- bun prisma migrate dev --name init
-```
-
-バリデーション
-
-```
-./node_modules/.bin/dotenv -e .env.local -- bun prisma validate
+dotenv -e .env.local -- bun prisma migrate dev --name init
 ```
 
 ## Startup
@@ -119,3 +97,31 @@ bun debug
 ```
 
 _Open your Web browser http://localhost:3000/_
+
+### その他
+
+現在設定されているすべての環境変数を出力
+
+```sh
+bun --print process.env
+```
+
+**Prisma**
+
+schema ファイルのバリデーションチェック
+
+```sh
+dotenv -e .env.local -- bun prisma validate
+```
+
+schema ファイル更新後のマイグレーション
+
+```sh
+dotenv -e .env.local -- bun prisma migrate dev
+```
+
+ブラウザでデータを確認
+
+```sh
+dotenv -e .env.local -- bun prisma studio
+```
