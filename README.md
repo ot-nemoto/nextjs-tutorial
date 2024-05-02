@@ -103,6 +103,13 @@ bun debug
 
 _Open your Web browser http://localhost:3000/_
 
+## Debug
+
+- Client-Side
+  - 実行とデバッグ > Debugging on Client-Side > デバッグの開始
+- Server-Side
+  - 実行とデバッグ > Debugging on Server-Side > デバッグの開始
+
 ### その他
 
 現在設定されているすべての環境変数を出力
