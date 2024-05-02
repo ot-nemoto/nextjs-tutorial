@@ -54,7 +54,7 @@ bun add --dev prisma
 _shadcn-ui_
 
 ```sh
-bunx shadcn-ui@latest add button
+bunx shadcn-ui@latest add button dropdown-menu
 ```
 
 ## Environments
@@ -83,6 +83,12 @@ POSTGRES_URL_NO_SSL=
 POSTGRES_USER=
 ```
 
+## Prepares
+
+```sh
+bun install
+```
+
 ## Migrate with prisma
 
 ```sh
@@ -92,7 +98,6 @@ dotenv -e .env.local -- bun prisma migrate dev --name init
 ## Startup
 
 ```sh
-bun install
 bun debug
 ```
 
