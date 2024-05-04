@@ -33,10 +33,10 @@ export default async function UserMenu() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <a href="https://driving-raven-64.accounts.dev/user">
+          <Link href={process.env.CLERK_USER_PROFILE || ''} target="_blank">
             <Settings className="mr-2" size={20} />
             アカウント設定
-          </a>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <SignOutButton>
