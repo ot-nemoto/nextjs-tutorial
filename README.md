@@ -12,6 +12,8 @@
   - Developers > API Keys
     - Publishable key
     - Secret keys
+  - Account Portal > Pages
+    - User profile
 - [_Cloudflare_](https://www.cloudflare.com/)
   - R2 > Overview > Create Bucket
   - R2 > Overview > Manage R2 API Tokens > Create API Token
@@ -66,6 +68,7 @@ _.env.local_
 # Clerk
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= # Publishable key
 CLERK_SECRET_KEY=                  # Secret keys
+CLERK_USER_PROFILE=                # User profile
 
 # Cloudflare
 CLOUDFLARE_ACCESS_KEY_ID=          # Use the following credentials for S3 clients: Access Key ID
