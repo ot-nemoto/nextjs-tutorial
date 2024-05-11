@@ -11,6 +11,8 @@
   - Developers > API Keys
     - Publishable key
     - Secret keys
+  - Account Portal > Pages
+    - User profile
 - [_Cloudflare_](https://www.cloudflare.com/)
   - R2 > Overview > Create Bucket
   - R2 > Overview > Manage R2 API Tokens > Create API Token
@@ -54,7 +56,7 @@ bun add --dev prisma
 _shadcn-ui_
 
 ```sh
-bunx shadcn-ui@latest add button
+bunx shadcn-ui@latest add button dropdown-menu
 ```
 
 ## Environments
@@ -65,6 +67,7 @@ _.env.local_
 # Clerk
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= # Publishable key
 CLERK_SECRET_KEY=                  # Secret keys
+CLERK_USER_PROFILE=                # User profile
 
 # Cloudflare
 CLOUDFLARE_ACCESS_KEY_ID=          # Use the following credentials for S3 clients: Access Key ID
@@ -83,6 +86,12 @@ POSTGRES_URL_NO_SSL=
 POSTGRES_USER=
 ```
 
+## Prepares
+
+```sh
+bun install
+```
+
 ## Migrate with prisma
 
 ```sh
@@ -92,11 +101,17 @@ dotenv -e .env.local -- bun prisma migrate dev --name init
 ## Startup
 
 ```sh
-bun install
 bun debug
 ```
 
 _Open your Web browser http://localhost:3000/_
+
+## Debug
+
+- Client-Side
+  - 実行とデバッグ > Debugging on Client-Side > デバッグの開始
+- Server-Side
+  - 実行とデバッグ > Debugging on Server-Side > デバッグの開始
 
 ### その他
 
