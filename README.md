@@ -4,7 +4,6 @@
 
   - [Next.js 14 アプリ開発のあらすじ](https://zenn.dev/nino/books/30e21d37af73b5)
   - [next-demo-app](https://github.com/dninomiya/next-demo-app)
-  - [shadcn/ui x Clerk でイケてるログイン画面を実装](https://zenn.dev/hayato94087/articles/98a48652e48bdb)
 
 ## External services
 
