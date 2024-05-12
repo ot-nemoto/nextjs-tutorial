@@ -36,6 +36,8 @@
       - `IMAGE_HOST_URL`
   - _YOUR-PROJECT_ > Settings > Functions > Function Region
     - Tokyo, Japan (Notheast) - hnd1
+  - _YOUR-PROJECT_ > Settings > General > Build & Development Settings > Build Command
+    - `prisma generate && next build` (Override)
   - _YOUR-PROJECT_ > Storage > Create Database > Postgres
   - _YOUR-PROJECT_ > Storage > _YOUR-DATABASE_ > Project > Connect Project > _YOUR-PROJECT_
 
@@ -139,4 +141,10 @@ dotenv -e .env.local -- bun prisma migrate dev
 
 ```sh
 dotenv -e .env.local -- bun prisma studio
+```
+
+Prisma schema を読み、Prisma Client コードを自動で作成
+
+```sh
+dotenv -e .env.local -- bun prisma generate
 ```
